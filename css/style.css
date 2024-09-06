@@ -1,0 +1,255 @@
+@font-face {
+    font-family: myFont;
+    src: url(../rwby_style.ttf);
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(19,18,22);
+    padding-left: 30px;
+    height: 70px;
+    width: auto;
+    font-size: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.h1-titulos{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-family: myFont;
+    font-size: 60px;
+}
+
+.nav-items{
+    display: flex;
+    padding-left: 20px;
+    list-style: none;
+    margin: 20px;
+}
+
+.nav-items li{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.logo img{
+    height: 50px;
+    padding-top: 10px;
+}
+
+.logo .logo-text{
+    padding-top: 10px;
+}
+
+.title-welcome{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.trailer-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0px 64px;
+}
+
+.box-1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 1080px;
+}
+
+.box-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.box-1 .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.box-1 .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box-1:hover .front {
+    opacity: 0; 
+}
+
+.box-1:hover .back {
+    opacity: 1;
+}
+
+
+/* Explicacion */
+
+.intro{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(39,39,38);
+    color: white;
+    border-radius: 10px;
+    grid-template-columns: 1fr 8fr;
+    margin: 60px;
+}
+
+.intro-imagen img{
+    width: 150px;
+    height: 150px;
+}
+
+.intro-texto{
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* Noticias */
+
+.news-box{
+    display: grid;
+    gap: 30px;
+    margin: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.new{
+    background-color: rgb(39,39,38);
+    color: white;
+    padding: 1em;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 10px;
+}
+
+.new img{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.new-title{
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.new-desc{
+    font-size: 18px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* VOLUMENES */
+
+.volume-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.volume{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(39,39,38);
+    color: white;
+    border-radius: 20px;
+    grid-template-columns: 1fr 2fr;
+    margin: 5%;
+    height: 400px;
+}
+
+.volume-image img{
+    height: 400px;
+    width: auto;
+}
+
+.episodes{
+    text-align: left;
+    font-size: 16px;
+    margin: 0px 20px;
+}
+
+.episodes h2{
+    text-align: center;
+}
+
+/* JUEGOS */
+.games-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px;
+    gap: 20px;
+}
+
+.game-box{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(39,39,38);
+    color: white;
+}
+
+.game img{ 
+    width: 700px;
+}
+
+.game-links img{
+    width: 50px;
+    margin: 10px 20px;
+}
+
+/* MUSICA */
+.music-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 300px 20px 300px;
+    gap: 50px;
+}
+
+h2{
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+a:active {
+  text-decoration: none;
+}
