@@ -23,6 +23,8 @@ header{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 html{
@@ -133,15 +135,97 @@ html{
 
 .intro-texto{
     font-size: 24px;
+    margin-top: 20px;
     margin-right: 20px;
 }
+
+/* Personajes */
+.container{
+    height: 800px;
+    /* height: 100vw; */
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin: 30px 0 100px;
+}
+
+.slide{
+    width: 1800px;
+    max-height: 1000px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+} 
+
+.slide ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    59% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+.char{
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    background-color: rgb(39,39,38);
+    color: white;
+    border-radius: 10px;
+    height: 800px;
+    width: 1800px;
+    gap: 40px;
+}
+
+.char-image img{
+    height: 800px;
+    width: auto;
+    padding: 20px;
+}
+
+.char-desc{
+    justify-content: center;
+    margin-right: 30px;
+
+}
+
+.char-desc h1{
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+.char-desc p{
+    font-size: 28px;
+    text-align: justify;
+}
+
+.char-desc img{
+    margin-top: 30px;
+    padding: 10px;
+    height: 250px;
+}
+
 
 /* Noticias */
 
 .news-box{
     display: grid;
     gap: 30px;
-    margin: 30px;
+    margin: 30px 30px 100px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -149,7 +233,7 @@ html{
     background-color: rgb(39,39,38);
     color: white;
     padding: 1em;
-    border: 1px solid rgb(80, 80, 80);
+    border: 1px solid rgb(88, 28, 32);
     border-radius: 10px;
 }
 
@@ -177,6 +261,7 @@ html{
 .volume-box{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
 }
 
 .volume{
@@ -211,8 +296,8 @@ html{
 .games-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 150px;
-    gap: 20px;
+    margin: 20px 150px 100px;
+    gap: 50px;
 }
 
 .game-box{
@@ -225,16 +310,22 @@ html{
 }
 
 .game-text h1{
-    font-size: 30px;
+    font-size: 34px;
+}
+
+.game-text p{
+    font-size: 18px;
+    margin: 10px;
 }
 
 .game img{ 
+    padding: 20px;
     width: 700px;
 }
 
 .game-links img{
-    width: 50px;
-    padding: 10px 20px;
+    width: 100px;
+    padding: 0px 20px;
 }
 
 /* MUSICA */
@@ -243,6 +334,41 @@ html{
     grid-template-columns: repeat(3, 1fr);
     margin: 20px 300px 20px 300px;
     gap: 50px;
+}
+
+/* LIBROS */
+.book-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    margin: 20px 200px 20px 200px;
+    gap: 50px;
+}
+
+.book{
+    background-color: rgb(39,39,38);
+    color: white;
+    border: 1px solid rgb(88, 28, 32);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.book-image{
+    height: 400px;
+}
+
+.book-title{
+    color: white;
+    padding-top: 10px;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: crimson;
 }
 
 h2{
