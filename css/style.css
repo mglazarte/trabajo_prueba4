@@ -3,6 +3,10 @@
     src: url(../rwby_style.ttf);
 }
 
+p{
+    font-family: Helvetica;
+}
+
 body{
     background-color: black;
 }
@@ -55,7 +59,8 @@ html{
 
 .logo img{
     height: 50px;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
 }
 
 .logo .logo-text{
@@ -192,15 +197,15 @@ html{
 
 .char-image img{
     height: 800px;
-    width: auto;
+    max-width: 693px;
     padding: 20px;
 }
 
 .char-desc{
     justify-content: center;
     margin-right: 30px;
-
 }
+
 
 .char-desc h1{
     font-size: 70px;
@@ -214,11 +219,33 @@ html{
 }
 
 .char-desc img{
+    margin: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    height: 280px;
+}
+
+/* .char-desc-blake{
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.char-desc-blake h1{
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+.char-desc-blake p{
+    font-size: 28px;
+    text-align: justify;
+}
+
+.char-desc-blake img{
     margin-top: 30px;
     padding: 10px;
     height: 250px;
-}
-
+} */
 
 /* Noticias */
 
@@ -244,15 +271,17 @@ html{
     border-radius: 10px;
 }
 
-.new-title{
-    font-size: 25px;
-    text-align: center;
+.new-tittle{
+    font-size: 24px;
+    text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
 }
 
 .new-desc{
     font-size: 18px;
     text-align: left;
+ padding-top: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -290,13 +319,18 @@ html{
 
 .episodes h2{
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.episodes a{
+    font-size: 18px;
 }
 
 /* JUEGOS */
 .games-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 20px 150px 100px;
+    margin: 20px 50px 100px;
     gap: 50px;
 }
 
@@ -310,17 +344,17 @@ html{
 }
 
 .game-text h1{
-    font-size: 34px;
+    font-size: 38px;
 }
 
 .game-text p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px;
 }
 
 .game img{ 
     padding: 20px;
-    width: 700px;
+    width: 800px;
 }
 
 .game-links img{
