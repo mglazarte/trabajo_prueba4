@@ -3,12 +3,17 @@
     src: url(../rwby_style.ttf);
 }
 
+
 p{
-    font-family: Helvetica;
+    font-family: Bahnschrift, Roboto, Georgia, 'Times New Roman', Times, serif;
 }
 
 body{
     background-color: black;
+}
+
+h1{
+    font-family: myFont;
 }
 
 header{
@@ -39,7 +44,7 @@ html{
     padding-top: 10px;
     color: white;
     text-align: center;
-    font-family: myFont;
+    font-family: Bahnschrift, Protest Guerrilla;
     font-size: 60px;
 }
 
@@ -166,7 +171,7 @@ html{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 20s infinite;
+    animation: slide 40s infinite;
 }
 
 @keyframes slide{
@@ -274,7 +279,7 @@ html{
 .new-tittle{
     font-size: 24px;
     text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Bahnschrift, Georgia, 'Times New Roman', Times, serif;
     padding-top: 10px;
 }
 
@@ -282,7 +287,7 @@ html{
     font-size: 18px;
     text-align: left;
  padding-top: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Bahnschrift, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* VOLUMENES */
@@ -320,10 +325,12 @@ html{
 .episodes h2{
     text-align: center;
     margin-bottom: 10px;
+    font-family: Roboto, Bahnschrift;
 }
 
 .episodes a{
     font-size: 18px;
+    font-family: Roboto;
 }
 
 /* JUEGOS */
@@ -345,6 +352,7 @@ html{
 
 .game-text h1{
     font-size: 38px;
+    font-family: Bahnschrift, Roboto;
 }
 
 .game-text p{
@@ -366,7 +374,7 @@ html{
 .music-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 20px 300px 20px 300px;
+    margin: 20px 300px 150px 300px;
     gap: 50px;
 }
 
@@ -375,7 +383,7 @@ html{
     display: grid;
     justify-content: center;
     grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    margin: 20px 200px 20px 200px;
+    margin: 20px 200px 150px 200px;
     gap: 50px;
 }
 
@@ -396,13 +404,27 @@ html{
 .book-title{
     color: white;
     padding-top: 10px;
+    font-family: Roboto, Bahnschrift;
 }
 
 
 
 /* FOOTER */
 footer{
-    background-color: crimson;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(39,39,38);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px;
+}
+
+footer .p{
+    padding-top: 10px;
+}
+
+footer img{
+    height: 50px;
 }
 
 h2{
