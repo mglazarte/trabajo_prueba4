@@ -430,7 +430,7 @@ a:active {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1800px) {
     .container{
         height: 800px;
         /* height: 100vw; */
